@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+.calculator {
+    background: #444;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 450px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+    margin: 50px auto;
+    position: relative;
+    transition: background 0.3s;
+}
+/* Mode Toggle */
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.mode-toggle span {
+    margin: 0 10px;
+}
+.mode-toggle:hover {
+    background: #333;
+}
+/* Display Area */
+.display-box {
+    width: 100%;
+    background: #555;
+    border: 2px solid #666;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enables scrolling when content overflows */
+    max-height: 100px; /* Limit the height of the display area */
+}
+.operator-display {
+    font-size: 1rem;
+    color: gray;
+    text-align: left;
+}
+#base-indicator{
+    height: 10px;
+    width: 10px;
+    background: #940303;
+    border-radius: 100%;
+    border: 2px solid #f0f0f0;
+
+}
+
+footer{
+    text-align: left;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+#mainDisplay {
+    font-size: 2rem;
+    text-align: right;
+}
+/* Memory Buttons */
+.memory-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 5px;
+}
+/* Main Calculator Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #e0e0e0;
+}
+button:active {
+    background: #d0d0d0;
+}
+.light-mode {
+    background-color: #f0f0f0;
+    color: black;
+}
+.light-mode .calculator {
+    background: white;
+}
+.light-mode .display-box {
+    background: #e0e0e0;
+    border-color: #ccc;
+}
+.light-mode button {
+    background: #e0e0e0;
+    color: black;
+}
+.light-mode button:hover {
+    background: #d0d0d0;
+}
+.light-mode button:active {
+    background: #b0b0b0;
+}
+/* Styling for Memory Panel and Delete buttons */
+.memory-panel {
+    margin-top: 5px;
+}
+.memory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.memory-item button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Code made by Justin James Corral BSIT 3-3 2024  */
